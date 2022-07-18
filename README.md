@@ -51,12 +51,7 @@ function main() {
 ```
 const palabras = ['hacer', 'oso', 'con', 'radar'];
 
-const isPalindromo = (palabra) => {
-  const palabraSplitted = palabra.split('');
-  const palabraAlReves = palabraSplitted.reverse();
-  if (palabraAlReves.join('') === palabra) return true;
-  return false;
-};
+const isPalindromo = (palabra) => palabra.split('').reverse().join('') === palabra;
 
-isPalindromo(palabras[0]);
+isPalindromo(palabras[1]);
 ```
